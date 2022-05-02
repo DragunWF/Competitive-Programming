@@ -26,5 +26,7 @@ public static class Kata
     }
 }
 
+// https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/csharp
+
 // Turns out everything could have been solved by doing n * n * n
 // But I guess that serves as a lesson to not overthink things...
