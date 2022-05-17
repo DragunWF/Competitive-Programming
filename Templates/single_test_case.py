@@ -1,0 +1,1 @@
+x = tuple(map(int, input.split(" ")))
