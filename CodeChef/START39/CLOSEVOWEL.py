@@ -2,7 +2,7 @@ t = int(input())
 for i in range(t):
     b = ("c", "g", "l", "r")
     n = int(input())
-    s = tuple([*input()])
+    s = input()
     rc = 0
     for c in s:
         if c in b:
