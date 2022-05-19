@@ -1,5 +1,5 @@
 t = int(input())
 for i in range(t):
     n = int(input())
-    codes = tuple(map(int, input().split(" ")))
+    codes = input().split(" ")
     print(f"{codes.count('START38')} {codes.count('LTIME108')}")
