@@ -17,6 +17,10 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 /* Objects */
 .flex-object {
   align-items: center;
@@ -26,3 +30,23 @@ body {
 }
 
 /* Main */
+.content {
+  height: 100vh;
+  min-height: 100%;
+  width: 100%;
+}
+
+.buttons {
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.buttons button {
+  border: 0;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+#problemsSolved {
+  font-weight: bold;
+}
