@@ -2,19 +2,19 @@ $(document).ready(() => {
   const incrementButton = $("#increment");
   const decrementButton = $("#decrement");
 
-  const problemsSolvedElement = $("#problemSolved");
-  const problemsSolvedValue = 0;
+  const problemsSolvedElement = $("#problemsSolved");
+  let problemsSolvedValue = 0;
 
   function updateProblemsSolvedText() {
     problemsSolvedElement.text(problemsSolvedValue.toString());
   }
 
-  incrementButton.onClick(() => {
+  incrementButton.click(() => {
     problemsSolvedValue++;
     updateProblemsSolvedText();
   });
 
-  decrementButton.onClick(() => {
+  decrementButton.click(() => {
     problemsSolvedValue--;
     updateProblemsSolvedText();
   });
