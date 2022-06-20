@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --color-text: #fff;
+  --color-text: #1d1c1a;
+  --color-selection: #50c878;
 }
 
 ::selection {
-  color: var(--color-text);
-  background: #9966cc;
+  color: #fff;
+  background: var(--color-selection);
 }
 
 html {
@@ -15,6 +16,7 @@ html {
 
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: var(--color-text);
 }
 
 h1 {
@@ -38,13 +40,20 @@ h1 {
 
 .buttons {
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 1.55rem;
 }
 
 .buttons button {
   border: 0;
   font-size: 1.8rem;
-  padding: 1rem;
+  padding: 1.25rem;
+  border-radius: 15px;
+  transition: all 0.25s ease-out;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 #problemsSolved {
