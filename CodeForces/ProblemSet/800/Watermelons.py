@@ -3,8 +3,10 @@ def solve(w):
         return "YES"
     return "NO"
 
+
 def main():
     w = int(input())
     print(solve(w))
+
 
 main()

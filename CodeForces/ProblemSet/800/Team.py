@@ -6,8 +6,10 @@ def solve(t):
             solved_problems += 1
     return solved_problems
 
+
 def main():
     t = int(input())
     print(solve(t))
+
 
 main()
