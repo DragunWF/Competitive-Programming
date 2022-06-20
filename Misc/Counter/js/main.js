@@ -16,6 +16,7 @@ $(document).ready(() => {
 
   decrementButton.click(() => {
     problemsSolvedValue--;
+    if (problemsSolvedValue < 0) problemsSolvedValue = 0;
     updateProblemsSolvedText();
   });
 });
