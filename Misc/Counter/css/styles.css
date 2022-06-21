@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  background: url("../img/background.svg");
   color: var(--color-text);
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   min-height: 100vh;
@@ -22,6 +23,12 @@ body {
 
 h1 {
   font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: #fff;
+  }
 }
 
 /* Objects */
