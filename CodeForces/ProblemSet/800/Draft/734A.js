@@ -1,7 +1,7 @@
 function solve(n, s) {
-  var a = 0;
-  var d = 0;
-  for (var i = 0; i < n; i++) {
+  let a = 0;
+  let d = 0;
+  for (let i = 0; i < n; i++) {
     if (s[i] === "A") a++;
     else d++;
   }
@@ -10,8 +10,8 @@ function solve(n, s) {
 }
 
 function main() {
-  var n = Number(readline());
-  var s = readline();
+  const n = Number(readline());
+  const s = readline();
   console.log(solve(n, s));
 }
 
