@@ -17,10 +17,8 @@ public class CodeForces
     {
         int eligibleMembers = 0;
         for (int i = 0; i < n; i++)
-        {
             if (p[i] + k <= 5)
                 eligibleMembers++;
-        }
         return eligibleMembers / 3;
     }
 }
