@@ -16,19 +16,11 @@ public class CodeForces
             Console.WriteLine(Solve(x, y, n));
         }
     }
-    
+
     private static int Solve(int x, int y, int n)
     {
-        int output = 0;
-        while (n > 0)
-        {
-            if (n % x == y)
-            {
-                output = n;
-                break;
-            }
-            n--;
-        }
-        return output;
+        int d = n / x;
+        int r = x * d + y;
+        return r > n ? r - x : r;
     }
 }
