@@ -21,8 +21,8 @@ public class CodeForces
         int n = int.Parse(x.ToString()[0].ToString());
 
         int p = (n - 1) * 10;
-        for (int i = 0; i < digitCount; i++)
-            p += i + 1;
+        for (int i = 1; i <= digitCount; i++)
+            p += i;
 
         return p;
     }
