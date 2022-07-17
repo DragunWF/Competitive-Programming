@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 public class CodeForces
 {
@@ -12,15 +13,7 @@ public class CodeForces
 
     private static int Solve(int[] n)
     {
-        int maxDistance = n[0];
-        int minDistance = n[0];
-        foreach (int distance in n)
-        {
-            if (distance > maxDistance)
-                maxDistance = distance;
-            if (distance < minDistance)
-                minDistance = distance;
-        }
-        return maxDistance - minDistance;
+        Array.Sort(n);
+        return n[2] - n[0];
     }
 }
