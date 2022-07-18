@@ -1,8 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
-public class CodeForces
+public sealed class CodeForces
 {
     private static void Main()
     {
@@ -35,7 +36,7 @@ public class CodeForces
             if (i + 1 > k)
                 swappedArray[i] = a[i];
             else
-                swappedArray[i] = a[i] > b[i] ? a[i] : b[i];
+                swappedArray[i] = Math.Max(a[i], b[i]);
         }
 
         return swappedArray.Aggregate((a, n) => a + n);
