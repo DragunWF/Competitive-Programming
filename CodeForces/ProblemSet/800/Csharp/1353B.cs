@@ -26,19 +26,14 @@ public sealed class CodeForces
 
     private static int Solve(int n, int k)
     {
-        int[] swappedArray = new int[n];
+        int[] swappedArr = new int[n];
         int[] a = ConvertToIntArrayAndSort(Console.ReadLine());
         int[] b = ConvertToIntArrayAndSort(Console.ReadLine());
         Array.Reverse(b);
 
         for (int i = 0; i < n; i++)
-        {
-            if (i + 1 > k)
-                swappedArray[i] = a[i];
-            else
-                swappedArray[i] = Math.Max(a[i], b[i]);
-        }
+            swappedArr[i] = i + 1 > k ? a[i] : Math.Max(a[i], b[i]);
 
-        return swappedArray.Aggregate((a, n) => a + n);
+        return swappedArr.Aggregate((a, n) => a + n);
     }
 }
