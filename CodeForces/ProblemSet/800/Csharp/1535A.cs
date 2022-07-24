@@ -28,8 +28,6 @@ public sealed class CodeForces
         Array.Sort(p);
 
         int[] sg = { p[2], p[3] };
-        bool fair = CheckIncluded(sg, g1) && CheckIncluded(sg, g2);
-
-        return fair ? "YES" : "NO";
+        return CheckIncluded(sg, g1) && CheckIncluded(sg, g2) ? "YES" : "NO";
     }
 }
