@@ -52,6 +52,7 @@ h1 {
 }
 
 .buttons button {
+  background: #dbdbdb;
   border-radius: 15px;
   border: 0;
   font-size: 1.8rem;
