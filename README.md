@@ -4,6 +4,10 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/DragunWF/Competitive-Programming)
 ![GitHub repo size](https://img.shields.io/github/repo-size/DragunWF/Competitive-Programming)
 
+## Total Problems Solved
+
+- [Total Problems Solved (All-Time)](https://dragunwf.herokuapp.com/problems-solved)
+
 ## Description
 
 Hello, this is where I post my solutions in my programming competitions. I am aware that Python may not
