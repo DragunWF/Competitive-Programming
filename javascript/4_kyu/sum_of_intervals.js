@@ -1,7 +1,7 @@
 // https://www.codewars.com/kata/52b7ed099cdc285c300001cd/train/javascript
 
 function sumIntervals(intervals) {
-  if (intervals.length == 1) return intervals[0][1] - intervals[0][0];
+  if (intervals.length === 1) return intervals[0][1] - intervals[0][0];
 
   intervals.sort((a, b) => a[0] - b[0]);
   const newIntervals = [];
