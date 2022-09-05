@@ -30,8 +30,6 @@ public sealed class CodeForces
                     oddNums++;
             }
         }
-        if (evenNums > 0 || oddNums > 0)
-            return evenNums == oddNums ? evenNums : -1;
-        return 0;
+        return evenNums == oddNums ? evenNums : -1;
     }
 }
