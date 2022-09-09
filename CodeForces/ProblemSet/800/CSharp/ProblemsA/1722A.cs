@@ -21,7 +21,7 @@ public sealed class CodeForces
 		if (n > 5)
 			return "NO";
 
-		string sortedName = "Timru";
+		const string sortedName = "Timru";
 		char[] convertedStr = s.ToCharArray();
 		Array.Sort(convertedStr);
 		return String.Join("", convertedStr) == sortedName ? "YES" : "NO";
