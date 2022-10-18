@@ -1,8 +1,7 @@
 import java.util.*;
-import java.lang.*;
 import java.io.*;
 
-public class CodeForces {
+public class _1669B {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
