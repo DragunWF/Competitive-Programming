@@ -1,4 +1,6 @@
 # https://www.codewars.com/kata/5263c6999e0f40dee200059d/train/python
+from rich import print  # For viewing purposes | Not complete
+
 
 def get_pins(observed: str) -> list:
     length = len(observed)
@@ -6,17 +8,21 @@ def get_pins(observed: str) -> list:
         return get_combinations(observed)
 
     combos = [get_combinations(x) for x in observed]
-    count = combos[0]
+    count = len(combos[0])
     for i in range(1, length):
-        count *= combos[i]
+        count *= len(combos[i])
 
-    output = [["" for x in range(length)] for x in range(count)]
-    for i in range(length):
-        iterations = get_iterations(i, combos[i])
-        for j in range(len(combos[i])):
-            for k in range(iterations):
-                pass
+    output = [[" " for x in range(length)] for x in range(count)]
+    for i in range(length):  # combinations
+        iterations = get_iterations(i, combos)
+        index = 0
+        print(iterations)
+        for k in range(count):
+            output[k][i] = combos[i][index]
+            if (k + 1) % iterations == 0:
+                index += 1
 
+    print(output)
     return list(set(["".join(x) for x in output]))
 
 
@@ -56,31 +62,33 @@ def get_iterations(index: int, combinations: list) -> int:
 
 
 def test():  # Not part of the solution
-    arr_test = ["339", "366", "399", "658", "636",
-                "258", "268", "669", "668", "266",
-                "369", "398", "256", "296", "259",
-                "368", "638", "396", "238", "356",
-                "659", "639", "666", "359", "336",
-                "299", "338", "696", "269", "358",
-                "656", "698", "699", "298", "236",
-                "239"]
-    count_3 = 0
-    count_6 = 0
-    count_5 = 0
-    for num in arr_test:
-        if num[0] == "3":
-            count_3 += 1
-        if num[0] == "6":
-            count_6 += 1
-        if num[1] == "6":
-            count_5 += 1
-    print(f"3: {count_3}")
-    print(f"6: {count_6}")
-    print(f"5: {count_5}")
+    # arr_test = ["339", "366", "399", "658", "636",
+    #             "258", "268", "669", "668", "266",
+    #             "369", "398", "256", "296", "259",
+    #             "368", "638", "396", "238", "356",
+    #             "659", "639", "666", "359", "336",
+    #             "299", "338", "696", "269", "358",
+    #             "656", "698", "699", "298", "236",
+    #             "239"]
+    # count_3 = 0
+    # count_6 = 0
+    # count_5 = 0
+    # for num in arr_test:
+    #     if num[0] == "3":
+    #         count_3 += 1
+    #     if num[0] == "6":
+    #         count_6 += 1
+    #     if num[1] == "6":
+    #         count_5 += 1
+    # print(f"3: {count_3}")
+    # print(f"6: {count_6}")
+    # print(f"5: {count_5}")
 
     # print(len(arr_test))
     # [length * " " for x in range(count)]
-    # print(get_pins('8'))
+    print(get_pins('8'))
+    print(get_pins('11'))
+    print(get_pins('369'))
 
 
 test()
