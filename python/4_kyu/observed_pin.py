@@ -54,7 +54,7 @@ def get_combinations(n: str) -> list:
     return output
 
 
-def get_iterations(index: int, combinations: list) -> int:
+def get_iterations(index: int, combinations: list) -> int:  # not part of the solution
     result = 0
     for i in range(len(combinations)):
         if index != i:
