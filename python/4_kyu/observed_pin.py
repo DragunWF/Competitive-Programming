@@ -12,18 +12,22 @@ def get_pins(observed: str) -> list:
     for i in range(1, length):
         count *= len(combos[i])
 
-    output = [[" " for x in range(length)] for x in range(count)]
-    for i in range(length):  # combinations
-        iterations = get_iterations(i, combos)
-        index = 0
-        print(iterations)
-        for k in range(count):
-            output[k][i] = combos[i][index]
-            if (k + 1) % iterations == 0:
-                index += 1
+    output, base = [], [0 for x in range(length)]
+    for i in range(count):
+        pin = ["" for x in range(length)]
+        for j in range(length):
+            pin[j] = combos[j][base[j]]
+        for j in range(length):
+            len_limit = len(combos[j])
+            if base[j] + 1 != len_limit:
+                base[j] += 1
+            elif base[j] + 1 == len_limit:
+                base[j] = 0
+                continue
+            break
+        output.append("".join(pin))
 
-    print(output)
-    return list(set(["".join(x) for x in output]))
+    return ["".join(x) for x in output]
 
 
 def get_combinations(n: str) -> list:
