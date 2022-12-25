@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/5263c6999e0f40dee200059d/train/python
-from rich import print  # For viewing purposes | Not complete
+from rich import print  # For viewing purposes
 
 
 def get_pins(observed: str) -> list:
