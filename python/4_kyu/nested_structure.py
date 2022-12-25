@@ -5,9 +5,7 @@ from rich import print
 def same_structure_as(original, other) -> bool:
     if type(original) != type(other):
         return False
-    list_A = [count_nested(x) for x in original]
-    list_B = [count_nested(x) for x in other]
-    return list_A == list_B
+    return [count_nested(x) for x in original] == [count_nested(x) for x in other]
 
 
 def count_nested(item):
