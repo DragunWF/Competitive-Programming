@@ -18,3 +18,7 @@ history.
 - Code Warriors should not submit your solutions as their own.
 - You will not be accepting contributions of any kind to this repository.
 - Creating a repository like this is discouraged by CodeWars.
+
+## My Badge
+
+![CodeWars Stats](https://www.codewars.com/users/DragonWF/badges/large)
