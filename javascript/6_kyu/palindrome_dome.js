@@ -1,7 +1,7 @@
 // https://www.codewars.com/kata/53046ceefe87e4905e00072a/train/javascript
 
 function palindrome(string) {
-  const validChars = "abcdefghijklmnopqrstuvwxyz0123456789".split("");
+  const validChars = "abcdefghijklmnopqrstuvwxyz0123456789";
   const raw = string.split("").filter((n) => {
     return validChars.includes(n.toLowerCase());
   });
