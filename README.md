@@ -1,4 +1,4 @@
-# My Kata Solutions in CodeWars
+# CodeWars Katas
 
 ![GitHub top language](https://img.shields.io/github/languages/top/DragunWF/CodeWars-Katas)
 ![Lines of code](https://img.shields.io/tokei/lines/github/DragunWF/CodeWars-Katas)
