@@ -12,6 +12,9 @@ history.
 
 **Word of warning:** Some of my solutions are... well kind of dirty.
 
-## Links
+## Disclaimer
 
-- [My CodeWars Profile](https://www.codewars.com/users/DragonWF)
+- Code Warriors are strongly encouraged not to look at your solutions to Kata until they have completed it themselves or at least taken the time to think about their own approaches.
+- Code Warriors should not submit your solutions as their own.
+- You will not be accepting contributions of any kind to this repository.
+- Creating a repository like this is discouraged by CodeWars.
