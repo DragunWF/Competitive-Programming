@@ -6,13 +6,13 @@ function towerBuilder(nFloors) {
   let stars = 1;
   for (let i = 0; i < nFloors; i++) {
     const sideLength = Math.ceil(rowLength / 2) - stars + i;
-    output.push(generateFloor(rowLength, stars, sideLength));
+    output.push(generateFloor(stars, sideLength));
     stars += 2;
   }
   return output;
 }
 
-function generateFloor(length, mid, side) {
+function generateFloor(mid, side) {
   let output = "";
   for (let i = 0; i < 2; i++) {
     for (let j = 1; j <= side; j++) {
