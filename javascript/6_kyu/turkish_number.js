@@ -22,7 +22,9 @@ function getSum(n, indicies) {
 // Not part of the solution
 function test() {
   const testCases = [6923522112, 692352217312, "x5810a78432"];
-  for (let i = 0; i < testCases.length; i++) {}
+  for (let i = 0; i < testCases.length; i++) {
+    console.log(checkValidTrNumber(testCases[i]));
+  }
 }
 
 test();
