@@ -44,7 +44,7 @@ function counter(arr) {
   return output;
 }
 
-// Test code
+// Test code..
 console.log(
   scratch([
     "### tiger tiger 100",
