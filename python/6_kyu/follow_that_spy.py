@@ -1,8 +1,5 @@
 # https://www.codewars.com/kata/5899a4b1a6648906fe000113/train/python
 
-from collections import Counter
-
-
 def find_routes(routes):
     output = []
     graph = {}
