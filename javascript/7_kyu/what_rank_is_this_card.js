@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/59cbcb4523dacc2ccd000030/solutions/javascript
+// https://www.codewars.com/kata/59cbcb4523dacc2ccd000030
 
 function rank(card) {
   if (card[0] === "1") return 0;
