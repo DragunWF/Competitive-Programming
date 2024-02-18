@@ -1,8 +1,5 @@
 # https://www.codewars.com/kata/54129112fb7c188740000162/train/python
 
-from string import digits
-
-
 def prefill(n, v):
     try:
         return [v for i in range(int(n))]
