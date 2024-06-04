@@ -8,6 +8,6 @@ public class Kata {
                 output.append(letter - 48);
             }
         }
-        return Integer.parseInt(output.toString());
+        return Long.parseLong(output.toString());
     }
 }
