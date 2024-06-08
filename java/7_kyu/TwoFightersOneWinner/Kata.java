@@ -33,5 +33,3 @@ class Fighter {
     this.damagePerAttack = damagePerAttack;
   }
 }
-
-// XOR
