@@ -1,5 +1,7 @@
 // https://www.codewars.com/kata/5411e3e95f3a7f6a7a0000e3/train/javascript
 
+// Wonderful piece of art I'd say
+
 Array.prototype.reduce = function (process, initial) {
   let endResult = initial ? initial : this[0];
   for (let i = Number(!Boolean(initial)); i < this.length; i++) {
