@@ -11,6 +11,7 @@ function once(fn) {
 }
 
 function test() {
+  // Not part of the solution, just testing
   const logOnce = once(console.log);
   logOnce("foo"); // -> "foo"
   logOnce("bar"); // -> undefined
