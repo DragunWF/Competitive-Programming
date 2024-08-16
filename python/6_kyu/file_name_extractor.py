@@ -5,6 +5,3 @@ class FileNameExtractor:
     def extract_file_name(dirty_file_name):
         without_first = "_".join(dirty_file_name.split("_")[1:])
         return ".".join(without_first.split(".")[:-1])
-
-
-print(["a", "b", "c"][:-1])
