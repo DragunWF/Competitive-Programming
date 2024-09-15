@@ -9,7 +9,6 @@ def more_zeros(s: str) -> list[str]:
 
 
 def is_more_zeros(bin_num: str):
-    print(bin_num)
     return bin_num.count("0") > bin_num.count("1")
 
 
