@@ -1,0 +1,1 @@
+print("YES" if int(input()) + 7 > 170 else "NO")
