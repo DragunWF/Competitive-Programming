@@ -1,24 +1,22 @@
 # Competitive-Programming
 
-![GitHub top language](https://img.shields.io/github/languages/top/DragunWF/CodeWars-Katas)
-![Lines of code](https://img.shields.io/tokei/lines/github/DragunWF/CodeWars-Katas)
-![GitHub repo size](https://img.shields.io/github/repo-size/DragunWF/CodeWars-Katas)
+## Table of Contents
 
-## Description
+- [Introduction](#introduction)
+- [About](#about)
+- [Platforms](#platforms)
 
-Welcome! This is just a repository for my kata solutions in CodeWars, feel free to look around! One
-note thought is that I used to store this locally so you might not see as many things in my commit
-history.
+## Introduction
 
-**Word of warning:** Some of my solutions are... well kind of dirty.
+Welcome to my Competitive Programming repository! This repository contains my solutions to various programming challenges from popular platforms such as [CodeWars](https://www.codewars.com/), [LeetCode](https://leetcode.com/), [CodeChef](https://www.codechef.com/), and [CodeForces](https://codeforces.com/).
 
-## Disclaimer
+## About
 
-- Code Warriors are strongly encouraged not to look at your solutions to a kata until they have completed it themselves or at least taken the time to think about their own approaches.
-- Code Warriors should not submit your solutions as their own.
-- You will not be accepting contributions of any kind to this repository.
-- Creating a repository like this is discouraged by CodeWars.
+This repository showcases my journey and progress in competitive programming. Each solution aims to demonstrate my understanding of algorithms, data structures, and problem-solving techniques. The solutions are organized by platform and problem type to make it easier to navigate and study.
 
-## My Badge
+## Platforms
 
-![CodeWars Stats](https://www.codewars.com/users/DragunWF/badges/large)
+- **CodeWars**: Solutions to challenges that focus on coding skills and logic.
+- **LeetCode**: Solutions to algorithmic problems commonly asked in technical interviews.
+- **CodeChef**: Solutions to competitive programming contests and practice problems.
+- **CodeForces**: Solutions to challenges and contests focusing on a wide range of topics in algorithms and data structures.
