@@ -5,10 +5,6 @@
 - [Introduction](#introduction)
 - [About](#about)
 - [Platforms](#platforms)
-- [How to Use](#how-to-use)
-- [Contributions](#contributions)
-
----
 
 ## Introduction
 
@@ -17,8 +13,6 @@ Welcome to my **Competitive Programming Repository**! 🚀
 This collection showcases my solutions to a variety of programming challenges from well-known platforms, including [CodeWars](https://www.codewars.com/), [LeetCode](https://leetcode.com/), [CodeChef](https://www.codechef.com/), [CodeForces](https://codeforces.com/), and [HackerRank](https://www.hackerrank.com/).
 
 Whether you're preparing for technical interviews or just exploring algorithmic problems, this repository reflects my continuous journey of learning and problem-solving.
-
----
 
 ## About
 
@@ -31,8 +25,6 @@ Competitive programming has been an essential part of honing my skills in algori
 - **Platform Diversity**: Tackling challenges from multiple platforms to expand my versatility.
 
 This repository is **structured** by platform and problem type to allow for easier navigation and study. Feel free to explore the folders to see how different problems are approached.
-
----
 
 ## Platforms
 
