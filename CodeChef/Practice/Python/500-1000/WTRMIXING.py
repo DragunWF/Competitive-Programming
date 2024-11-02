@@ -7,12 +7,12 @@ class Solution:
         t = util.int()
         for _ in range(t):
             a, b, x, y = util.ints()
-            if x < y:
+            if a < b:
                 print("YES" if a + x >= b else "NO")
-            elif x > y:
+            elif a > b:
                 print("YES" if a - y <= b else "NO")
             else:
-                print(0)
+                print("YES")
 
     @staticmethod
     def ints():
