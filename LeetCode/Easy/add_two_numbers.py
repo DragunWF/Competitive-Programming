@@ -2,10 +2,10 @@
 
 class Solution:
     def romanToInt(self, s: str) -> int:
-        roman_numeral_values = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+        roman_numeral_values = {"I": 1, "V": 5, "X": 10,
+                                "L": 50, "C": 100, "D": 500, "M": 1000}
         total = 0
         prev = None
-        subtract_combos = (("I", "X", "C"), ("V", "X", "L", "C", "D", "M"))
         for char in s:
             if prev == "I" and char in ("V", "X"):
                 total -= 2
