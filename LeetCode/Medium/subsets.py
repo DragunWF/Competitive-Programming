@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/combinations/description/
+# https://leetcode.com/problems/subsets/description/
 
 from itertools import combinations
 
