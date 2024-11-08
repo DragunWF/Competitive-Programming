@@ -1,11 +1,17 @@
 # https://leetcode.com/problems/longest-common-prefix/description/
 
 class Solution:
-    def strStr(self, haystack: str, needle: str) -> int:
-        for i in range(len(haystack)):
-            sub_str = ""
-            for j in range(i, min(i + len(needle), len(haystack))):
-                sub_str += haystack[j]
-            if sub_str == needle:
-                return i
-        return -1
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        output = ""
+        min_len = min(len(word) for word in strs)
+        for i in range(min_len):
+            is_not_common = False
+            common = strs[0][i]
+            for word in strs:
+                if word[i] != common:
+                    is_not_common = True
+                    break
+            if is_not_common:
+                break
+            output += common
+        return output
