@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/sort-the-people/description/
+// https://leetcode.com/problems/filter-elements-from-array
 
 /**
  * @param {number[]} arr

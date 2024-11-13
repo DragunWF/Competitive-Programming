@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/description/
+# https://leetcode.com/problems/running-sum-of-1d-array
 
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:

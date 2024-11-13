@@ -1,8 +1,8 @@
 # https://leetcode.com/problems/smallest-even-multiple/description/
 
 class Solution:
-    def runningSum(self, nums: List[int]) -> List[int]:
-        output = []
-        for i in range(len(nums)):
-            output.append(sum(nums[0:i + 1]))
-        return output
+    def smallestEvenMultiple(self, n: int) -> int:
+        for i in range(1, 151):
+            multiple = n * i
+            if multiple % 2 == 0:
+                return multiple
