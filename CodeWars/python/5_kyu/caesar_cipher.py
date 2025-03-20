@@ -35,7 +35,7 @@ def test() -> None:
     print(encrypter.decode("BFKKQJX")) # WAFFLES
 
     encrypter = CaesarCipher(1)
-    print(encrypter.encode("Defense the east wall of the castle"))
+    print(encrypter.encode("Defend the east wall of the castle"))
 
 
 if __name__ == "__main__":
