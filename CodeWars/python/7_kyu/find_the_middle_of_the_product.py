@@ -2,7 +2,7 @@
 
 def find_middle(s: str) -> int:
     if not s or type(s) != str:
-        return - 1
+        return -1
 
     number_str = get_number(s)
     if not number_str:
