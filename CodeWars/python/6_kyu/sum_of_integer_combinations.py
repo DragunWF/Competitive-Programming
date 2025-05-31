@@ -6,9 +6,9 @@ from itertools import combinations_with_replacement
 def find(arr: list, n: int) -> int:
     count = 0
     for i in range(1, len(arr) + 1):
-        possibilities = list(combinations_with_replacement(arr, i))
-        for possibility in possibilities:
-            if sum(possibility) == n:
+        combinations = list(combinations_with_replacement(arr, i))
+        for combination in combinations:
+            if sum(combination) == n:
                 count += 1
     return count
 
