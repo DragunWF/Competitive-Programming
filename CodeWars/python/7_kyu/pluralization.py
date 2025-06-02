@@ -8,7 +8,7 @@ def pluralize(word: str) -> str:
     consonants = "bcdfghjklmnpqrstvwxyz"
     for consonant in consonants:
         if word.endswith(f"{consonant}y"):
-            return f"{word[0:-1]}ies"
+            return f"{word[:-1]}ies"
     return f"{word}s"
 
 
