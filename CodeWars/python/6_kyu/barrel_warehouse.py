@@ -1,10 +1,10 @@
 # https://www.codewars.com/kata/67f2ef6f7ba2a69a66e3bd68/train/python
 
 def insert_barrels(warehouse: list[str], barrels: list[str]) -> list[str]:
-    if len(warehouse) == 1 and len(barrels) == 1:
-        return ["0"]
-
     REQUIRED_SPACE = len(barrels)
+
+    if len(warehouse) == 1 and REQUIRED_SPACE == 1:
+        return ["0"]
 
     min_found_space = None
     min_space_indexes = {"start": None, "end": None}
