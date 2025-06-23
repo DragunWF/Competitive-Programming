@@ -7,7 +7,6 @@ def anagram_counter(words: list) -> list:
     for i in range(len(words)):
         words[i] = "".join(sorted([*words[i]]))
 
-    print(words)
     anagram_count = 0
     word_counter = Counter(words)
     for key in word_counter:
