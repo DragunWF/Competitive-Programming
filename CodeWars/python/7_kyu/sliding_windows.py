@@ -1,8 +1,8 @@
 # https://www.codewars.com/kata/671fd30696d3f42285f7d1f1/train/python
 
-def window(lngth, offset, lst):
+def window(lngth: int, offset: int, lst: list) -> list[list]:
     if not lngth:
-        return [[] for i in range(len(lst))]
+        return [[] for i in range(0, len(lst) + 1, offset)]
 
     i = 0
     output = []
