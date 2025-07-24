@@ -2,7 +2,6 @@
 
 def scramble(s: str, array: list[int]) -> str:
     output = [*(" " * len(array))]
-    print(output)
     for i, position in enumerate(array):
         output[position] = s[i]
     return "".join(output)
