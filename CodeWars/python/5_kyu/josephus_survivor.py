@@ -8,7 +8,7 @@ def josephus_survivor(n: int, k: int) -> int:
 
 
 def test() -> None:
-    # Expected: 7
+    # Expected: 4
     print(josephus_survivor(7, 3))
 
 
