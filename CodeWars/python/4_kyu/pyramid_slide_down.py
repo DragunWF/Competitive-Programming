@@ -1,18 +1,19 @@
 # https://www.codewars.com/kata/551f23362ff852e2ab000037/train/python
-# not complete
 
-def longest_slide_down(pyramid):
-    result, index = pyramid[0], 0
-    for i in range(1, len(pyramid)):
-        result += pyramid[i][index]
-        index += 1
-        print(pyramid[i][index], end=" ")
-    return result
+def longest_slide_down(pyramid: list[list[int]]) -> int:
+    row_index = len(pyramid) - 2
+    while row_index >= 0:
+        for i, column in enumerate(pyramid[row_index]):
+            previous_row = pyramid[row_index + 1]
+            pyramid[row_index][i] = column + \
+                max(previous_row[i], previous_row[i + 1])
+        row_index -= 1
+    return pyramid[0][0]
 
 
 def test():
     test_cases = [
-        [[3], [7, 4], [2, 4, 6], [8, 5, 9, 3]],
+        [[3], [7, 4], [2, 4, 6], [8, 5, 9, 3]],  # 23
         [
             [75],
             [95, 64],
@@ -28,11 +29,12 @@ def test():
             [70, 11, 33, 28, 77, 73, 17, 78, 39, 68, 17, 57],
             [91, 71, 52, 38, 17, 14, 91, 43, 58, 50, 27, 29, 48],
             [63, 66,  4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31],
-            [4, 62, 98, 27, 23,  9, 70, 98, 73, 93, 38, 53, 60,  4, 23],
+            [4, 62, 98, 27, 23,  9, 70, 98, 73, 93, 38, 53, 60,  4, 23],  # 1074
         ]
     ]
     for case in test_cases:
         print(longest_slide_down(case))
 
 
-test()
+if __name__ == "__main__":
+    test()
