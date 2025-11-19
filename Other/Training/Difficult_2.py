@@ -35,7 +35,7 @@ def solve() -> None:
     paths = {}
     current_path = [STARTER_NODE]
 
-    def traverse(node: str, path_cost: int):
+    def traverse(node: str, path_cost: int) -> None:
         """
         Traverses via recursion
         :return:

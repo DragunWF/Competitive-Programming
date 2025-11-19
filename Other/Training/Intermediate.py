@@ -77,5 +77,6 @@ def debug_print_visited(matrix: list[list[int]]) -> None:
     print("-" * 20)
     sleep(0.25)
 
+
 if __name__ == "__main__":
     solve()
