@@ -17,7 +17,8 @@ def input_matrix() -> list[list[int]]:
         matrix.append(row)
     return matrix
 
-def get_matrix_sums(matrix: list[list[int]]) -> list[list[int]]:
+
+def get_matrix_sums(matrix: list[list[int]]) -> list[int]:
     output = []
     for row in matrix:
         output.append(sum(row))
