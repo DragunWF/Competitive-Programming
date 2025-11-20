@@ -30,7 +30,6 @@ def get_longest_word(chosen_words: list[str]) -> list[str]:
 def can_be_formed(letter_pool_counter: Counter, target_word: str) -> bool:
     target_word_counter = Counter(target_word)
     for letter in target_word_counter:
-
         if not letter in letter_pool_counter or letter_pool_counter[letter] < target_word_counter[letter]:
             return False
     return True
