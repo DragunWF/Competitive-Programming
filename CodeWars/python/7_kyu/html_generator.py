@@ -20,7 +20,6 @@ class HTMLGen:
         return f"<span>{content}</span>"
 
     def title(self, content: str) -> str:
-
         return f"<title>{content}</title>"
 
     def comment(self, content: str) -> str:
