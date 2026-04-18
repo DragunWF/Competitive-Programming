@@ -1,4 +1,4 @@
-//  
+// https://www.codewars.com/kata/69269262ced9e95dc63abd1e
 
 function jumbler(indices) {
   let jumbleCount = 0;
