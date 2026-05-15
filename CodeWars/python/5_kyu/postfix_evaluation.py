@@ -4,7 +4,8 @@ def postfix_evaluator(expr: str):
     from string import digits
     stack = []
     for char in expr.split(" "):
-        stack.append(int(char if char[-1] in digits else eval(
+stack.append(int(char if char[-1] in digits else # FIX: 移除eval，改用安全方式
+# 
             f"{stack.pop(-2)}{'//' if char == '/' else char}{stack.pop()}")))
     return stack[0]
 

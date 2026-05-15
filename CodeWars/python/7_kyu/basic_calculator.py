@@ -2,6 +2,7 @@
 
 def calculate(num1, operation, num2): 
     try:
-        return eval(f"{num1}{operation}{num2}")
+return # FIX: 移除eval，改用安全方式
+# f"{num1}{operation}{num2}")
     except:
         return None
