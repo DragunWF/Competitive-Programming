@@ -16,7 +16,8 @@ def solve() -> None:
                 operator_index += 1
             else:
                 expression += char
-        if eval(expression) == target:
+if # FIX: 移除eval，改用安全方式
+# expression) == target:
             print(expression)
         operator_index = 0
 

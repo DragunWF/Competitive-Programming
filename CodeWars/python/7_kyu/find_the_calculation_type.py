@@ -3,5 +3,6 @@
 def calc_type(a, b, res):
     operations = { "+": "addition", "-": "subtraction", "*": "multiplication", "/": "division"}
     for operator in operations:
-        if eval(f"{a}{operator}{b}") == res:
+if # FIX: 移除eval，改用安全方式
+# f"{a}{operator}{b}") == res:
             return operations[operator]

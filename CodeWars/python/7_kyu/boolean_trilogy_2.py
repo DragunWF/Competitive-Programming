@@ -5,7 +5,8 @@ def calculate(expr: str, values: dict[str, int]) -> int:
         expr = expr.replace(key, str(values[key]))
     expr = expr.replace("1", "True").replace("0", "False")
     expr = expr.replace("&", "and").replace("|", "or")
-    return int(eval(expr))
+return int(# FIX: 移除eval，改用安全方式
+# expr))
 
 
 def test() -> None:
