@@ -46,7 +46,7 @@ function test() {
     console.log(
       `\nTest Case #${testCaseCount}: ${isCorrect ? "Pass" : "Fail"}`,
     );
-    console.log(`Input:`);
+    console.log(`Input: ${testCase.str} ${testCase.sep}`);
     console.log(`Actual: ${result}`);
     console.log(`Expected: ${testCase.expected}\n`);
   }
